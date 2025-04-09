@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ramya | Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">ramya.dev</div>
+      <ul>
+        <li><a href="#about">About()</a></li>
+        <li><a href="#projects">Projects()</a></li>
+        <li><a href="#contact">Contact()</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="intro">
+        <h1>Hello, I’m <span class="highlight">Ramya</span></h1>
+        <p>Software enthusiast, research aspirant, and lifelong bug squasher 🐞</p>
+        <code>> system.out.println("Exploring the boundaries of CS")</code>
+      </div>
+      <div class="profile">
+        <img src="{{ url_for('static', filename='assets/profile.png') }}" alt="Ramya's profile">
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>// About Me</h2>
+      <p>I’m currently working as a Cloud DevOps engineer with an eye toward research in computer systems, distributed computing, and AI tooling. I enjoy building things, breaking them, and understanding *why* they broke.</p>
+    </section>
+
+    <section id="projects">
+      <h2>// Featured Projects</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="{{ url_for('static', filename='assets/icons/terminal.png') }}">
+          <h3>ShellCraft</h3>
+          <p>A CLI-based Linux simulation game written in Python. Terminal meets RPG.</p>
+        </div>
+        <div class="card">
+          <img src="{{ url_for('static', filename='assets/icons/bug.png') }}">
+          <h3>BugLog</h3>
+          <p>Automatically logs, tracks, and visualizes bugs in your code with ML-powered suggestions.</p>
+        </div>
+        <div class="card">
+          <img src="{{ url_for('static', filename='assets/icons/lambda.png') }}">
+          <h3>LambdaViz</h3>
+          <p>A funky visualizer for lambda calculus expressions. Because why not?</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>// Contact</h2>
+      <p><strong>Email:</strong> ramya@example.com</p>
+      <p><strong>GitHub:</strong> 
+        <a href="https://github.com/Ramyac24">
+          <img src="{{ url_for('static', filename='assets/linkedin.png') }}" alt="GitHub Logo" class="linkedin-logo"/>
+        </a>
+      </p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ramya-shekar-a59547235/">linkedin.com/in/ramya</a></p>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

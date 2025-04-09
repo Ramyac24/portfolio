@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Code', monospace;
+    background-color: #0f1115;
+    color: #c9d1d9;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background: #161b22;
+    border-bottom: 1px solid #2e343d;
+  }
+  
+  .logo {
+    font-weight: bold;
+    color: #58a6ff;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  nav a {
+    color: #c9d1d9;
+    text-decoration: none;
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+  }
+  
+  .highlight {
+    color: #58a6ff;
+  }
+  
+  code {
+    background-color: #1c2128;
+    padding: 5px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  
+  .profile img {
+    width: 220px;
+    border-radius: 12px;
+  }
+  
+  section {
+    padding: 2rem;
+  }
+  
+  .card-container {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .card {
+    background: #161b22;
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 250px;
+    transition: 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    background-color: #21262d;
+  }
+  
+  .card img {
+    width: 32px;
+    margin-bottom: 1rem;
+  }
+  
+  .linkedin-logo {
+    width: 16px; /* Adjust as needed */
+    height: 16px; /* Adjust as needed */
+    vertical-align: middle; /* Align with text */
+    margin-left: 5px; /* Add spacing */
+  }
+  
